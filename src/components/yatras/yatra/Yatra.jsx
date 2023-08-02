@@ -18,7 +18,7 @@ const Yatra = () => {
     <Link href="/yatra?divyanshu='hello'">
     <div className={Styles.container} >
         <div className={Styles.image} >
-            <Image src="https://drive.google.com/uc?export=view&id=1byR6xDcYfzygojdY5Bbn0GsQFiOMzKyI" width={400} height={400} alt="Kedarnath Temple"/>
+            <Image src="https://drive.google.com/uc?export=view&id=1-RcNeRPTNxWKJiX-3ZDs-gGGlyA-OqFJ" width={400} height={400} alt="Kedarnath Temple"/>
         </div>
         <div className={Styles.text} >
             <h2 style={poppins.style}>Kedarnath Temple</h2>
