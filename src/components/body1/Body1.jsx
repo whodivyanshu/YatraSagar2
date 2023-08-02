@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styles from "./body1.module.css";
 import Link from "next/link";
 import { Cagliostro, Poppins, Russo_One, Angkor } from "next/font/google";
@@ -17,35 +17,34 @@ const biorhyme = Cagliostro({
   subsets: ["latin"],
 });
 
-
 const Body1 = () => {
   return (
     <div className={styles.container}>
-    <div className={styles.navbar}>
-      <div className={styles.navleft}>
-        <Link href="#" style={poppins.style}>Home</Link>
-        <Link href="#" style={poppins.style}>Highlights</Link>
+      <div className={styles.navbar}>
+        <div className={styles.navleft}>
+          <Link href="#" style={poppins.style}>Home</Link>
+          <Link href="#" style={poppins.style}>Highlights</Link>
+        </div>
+        <div className={styles.navmid}>
+          <Link href="#" style={angkor.style}>
+            YatraSagar
+          </Link>
+        </div>
+        <div className={styles.navright}>
+          <Link href="#" style={poppins.style}>Reviews</Link>
+          <Link href="#" style={poppins.style}>About</Link>
+        </div>
       </div>
-      <div className={styles.navmid}>
-        <Link href="#" style={angkor.style}>
-          YatraSagar
-        </Link>
-      </div>
-      <div className={styles.navright}>
-        <Link href="#" style={poppins.style}>Reviews</Link>
-        <Link href="#" style={poppins.style}>About</Link>
+      <div className={styles.title}>
+        <h1 style={biorhyme.style}>
+          Enlightened Journeys to Sacred <br/> Destinations Worldwide
+        </h1>
+        <div className={styles.button}>
+          <button className={styles.btn} style={poppins.style}>Discover Holy Pilgrimages</button>
+        </div>
       </div>
     </div>
-    <div className={styles.title}>
-      <h1 style={biorhyme.style}>
-        Enlightened Journeys to Sacred <br/> Destinations Worldwide
-      </h1>
-      <div className={styles.button} >
-        <button className={styles.btn} style={poppins.style}>Discover Holy Pilgrimages</button>
-      </div>
-    </div>
-  </div>
   )
 }
 
-export default Body1
+export default Body1;

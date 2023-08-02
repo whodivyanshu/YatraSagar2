@@ -21,11 +21,6 @@ const Yatras = () => {
           <Yatra />
           <Yatra />
           <Yatra />
-          <Yatra />
-          <Yatra />
-          <Yatra />
-          <Yatra />
-
         </div>
     </div>
   )

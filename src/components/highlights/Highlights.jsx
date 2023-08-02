@@ -1,50 +1,30 @@
-"use client"
-import React, { useEffect } from 'react';
+// Highlights.js
+import React from 'react';
 import styles from "./highlights.module.css";
 import Image from 'next/image';
+
 import Image1 from "./images/1.jpg";
 import Image2 from "./images/2.jpg";
 import Image3 from "./images/3.jpg";
 import Image4 from "./images/4.jpg";
 import Image5 from "./images/5.jpg";
-import {Splide } from '@splidejs/splide';
-import '@splidejs/splide/css';
-
-import '@splidejs/splide/css/skyblue';
-import '@splidejs/splide/css/sea-green';
-
-import '@splidejs/splide/css/core';
 
 const Highlights = () => {
-    useEffect(() => {
-        const splide = new Splide('.splide', {
-            type: 'loop',
-            perPage: 5,
-            focus: 'center',
-        });
-
-        splide.mount();
-    }, []);
-
-    return (
-        <div className={styles.container}>
-            <div className={styles.text}>
-                <h1>Yatra Highlights</h1>
-                <p>Join the Sacred Mandir Yatra for an Unforgettable Experience!</p>
-            </div>
-            <section className="splide" aria-label="Splide Basic HTML Example">
-                <div className="splide__track">
-                    <ul className="splide__list">
-                        <li className="splide__slide slide1"><Image alt='hey' width={240} height={400} src={Image1} /></li>
-                        <li className="splide__slide slide2"><Image alt='hey' width={240} height={400} src={Image2} /></li>
-                        <li className="splide__slide slide3"><Image alt='hey' width={240} height={400} src={Image3} /></li>
-                        <li className="splide__slide slide4"><Image alt='hey' width={240} height={400} src={Image4} /></li>
-                        <li className="splide__slide slide5"><Image alt='hey' width={240} height={400} src={Image5} /></li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-    )
+  return (
+    <div className={styles.container}>
+      <div className={styles.text}>
+        <h1>Yatra Highlights</h1>
+        <p>Join the Sacred Mandir Yatra for an Unforgettable Experience!</p>
+      </div>
+      <div className={styles.imageContainer}>
+        <Image alt='hey' src={Image1} width={260} height={400} />
+        <Image alt='hey' src={Image2} width={260} height={400} />
+        <Image alt='hey' src={Image3} width={260} height={400} />
+        <Image alt='hey' src={Image4} width={260} height={400} />
+        <Image alt='hey' src={Image5} width={260} height={400} />
+      </div>
+    </div>
+  );
 }
 
 export default Highlights;
